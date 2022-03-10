@@ -1,0 +1,83 @@
+.img {
+  width: 250px;
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.but {
+  border-radius: 5px;
+  background-color: var(--PROJECT_COLOR);
+  box-sizing: border-box;
+  font-size: 13px;
+  margin: 10px;
+  box-shadow: 3px 3px #e2dada;
+  position: relative;
+}
+
+.beerName {
+  display: flex;
+  background-color: white;
+}
+@media only screen and (max-width: 630px) {
+
+  .beerName {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.beerImg {
+  width: 15%;
+  height: 600px;
+  margin: 25px 100px;
+  display: block;
+  max-width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .beerImg {
+    width: 15%;
+    min-width: 200px;
+    height: 550px;
+    margin: 25px 100px;
+    display: block;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .beerImg {
+    width: 15%;
+    min-width: 200px;
+    height: 600px;
+    margin: 25px 100px;
+    display: block;
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .text {
+    margin:  80px;
+  }
+}
+
+.name {
+  color: var(--PROJECT_COLOR);
+  font-size: 30px;
+}
+
+.pText {
+  color: #B9B9B9;
+}
+
+span {
+  margin-right: 10px;
+}
+
+.description {
+  padding: 0 250px 30px 0;
+}
+.h{
+  color: var(--PROJECT_COLOR)
+}

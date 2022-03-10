@@ -1,0 +1,12 @@
+{
+  "app_title" : "Titre",
+  "language" : "Langue",
+  "welcome_message" : "Bievenue",
+  "home" : "DOMICILE",
+  "The_Beer_Bank" : "La banque de bière",
+  "favorite": "FAVORI",
+  "Find_your_favorite_beer_here": "Trouvez votre bière favorite ici",
+  "Search_for_beer_name": "Rechercher le nom de la bière",
+  "GO_BACK" : "RETOURNER",
+  "Best_served_width": "Largeur la mieux servie"
+}

@@ -1,0 +1,12 @@
+{
+  "app_title" : "Заголовок",
+  "language" : "Язык",
+  "welcome_message" : "Добро пожаловать",
+  "home" : "ДОМА",
+  "The_Beer_Bank": "Банк пива",
+  "favorite": "ЛЮБИМЫЙ",
+  "Find_your_favorite_beer_here": "Найдите свое любимое пиво здесь",
+  "Search_for_beer_name": "Поиск по названию пива",
+  "GO_BACK": "ВЕРНИТЕСЬ",
+  "Best_served_width": "Лучшая ширина обслуживания"
+}

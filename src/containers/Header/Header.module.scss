@@ -1,0 +1,33 @@
+.header {
+  background: var(--PROJECT_COLOR);
+}
+
+.link {
+  color: #FEF6C9;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.homeFavorite {
+  display: flex;
+  justify-content: end;
+}
+
+.beerBank {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  color: #FEF6C9;
+  margin: 0px;
+}
+
+
+.beer {
+  font-size: 35px;
+  margin: 0px;
+}

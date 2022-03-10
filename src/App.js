@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useEffect} from "react";
+import Layout from "./containers/Leyout/Leyout";
+import {Route} from "react-router-dom";
+import Home from "./pages/Home/Home";
+import SingleBeerPage from "./pages/SingleBeerPage/SingleBeerPage";
+import {ToastContainer, toast} from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import {useSelector} from "react-redux";
+import Favorite from "./pages/Favorite/Favorite";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const {error} = useSelector((state) => state.beerReducer);
+
+    useEffect(() => {
+        if (error) {
+            toast.error(error, {position: toast.POSITION.BOTTOM_LEFT, autoClose: false})
+        }
+    }, [error])
+
+
+
+    return (
+        <div>
+            <Layout>
+                <Route path="/home" component={Home} exact/>
+                <Route path="/singleBeer/:id" component={SingleBeerPage} exact/>
+                <Route path="/favorites" component={Favorite} exact/>
+            </Layout>
+            <ToastContainer position="bottom-center"/>
+        </div>
+    );
 }
 
 export default App;
